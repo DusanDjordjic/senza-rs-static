@@ -4,8 +4,184 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Senza Gluten Free</title>
+        <link rel="stylesheet" href="css/root.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/hero.css" />
+        <link rel="stylesheet" href="css/about.css" />
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,700&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <h1>Senza</h1>
+        <!-- HEADER -->
+        <header class="header" #header>
+            <div class="container">
+                <div class="header__elements-wrapper">
+                    <a class="logo" routerLink="/">
+                        <img
+                            src="images/logo.webp"
+                            height="48"
+                            width="79"
+                            alt="Logo"
+                        />
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li>
+                                <a class="nav__list__link" href="#o-nama"
+                                    >O Nama</a
+                                >
+                            </li>
+
+                            <li>
+                                <a class="nav__list__link" href="#proizvodi"
+                                    >Proizvodi</a
+                                >
+                            </li>
+                            <li>
+                                <a class="nav__list__link" href="#kontakt"
+                                    >Kontakt</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__grid">
+                    <div class="hero__text">
+                        <h1>Senza Gluten Free</h1>
+                        <p>
+                            Senza - vrhunski brend bezglutenskih proizvoda s
+                            dvadesetogodišnjom tradicijom u poslovanju.
+                        </p>
+
+                        <div>
+                            <a class="btn primary has-icon"> </a>
+                        </div>
+                    </div>
+                    <div class="hero__image">
+                        <img
+                            src="images/hero-image.jpeg"
+                            alt="Baking Cookies"
+                            class="hero-image"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="o-nama" class="about">
+            <div class="container">
+                <div class="about__grid">
+                    <div class="about__text">
+                        <h2>O Senzi</h2>
+                        <p>
+                            Naše preduzeće se ponosi proizvodnjom vrhunskih
+                            bezglutenskih proizvoda, uključujući keks, testeninu
+                            i brašno.
+                        </p>
+                        <p>
+                            Sa fokusom na kvalitetu i ukusu, naši proizvodi su
+                            pažljivo osmišljeni da zadovolje potrebe svih
+                            ljubitelja bezglutenske ishrane.
+                        </p>
+                    </div>
+
+                    <div>
+                        <img
+                            src="images/hero-image.jpeg"
+                            alt="Baking Cookies"
+                            class="about__image"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="best-sellers-section" #proizvodi>
+            <div class="container">
+                <h2 class="paragraph-wrapper">
+                    <p>Nasi Proizvodi</p>
+                </h2>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer *ngIf="footerContent$ | async as footerContent">
+            <div class="container">
+                <div class="footer__grid">
+                    <div class="footer__grid__item">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Iusto, rerum.
+                        </p>
+                    </div>
+                    <div class="footer__grid__item">
+                        <h4>Navigacija</h4>
+                        <ul>
+                            <li>
+                                <span> Text </span>
+                                <a> Link </a>
+                            </li>
+                            <li>
+                                <span> Text </span>
+                                <a> Link </a>
+                            </li>
+                            <li>
+                                <span> Text </span>
+                                <a> Link </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__grid__item">
+                        <h4>Navigacija</h4>
+                        <ul>
+                            <li>
+                                <span> Text </span>
+                                <a> Link </a>
+                            </li>
+                            <li>
+                                <span> Text </span>
+                                <a> Link </a>
+                            </li>
+                            <li>
+                                <span> Text </span>
+                                <a> Link </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__grid__item">
+                        <h4>Navigacija</h4>
+                        <ul>
+                            <li>
+                                <span> Text </span>
+                                <a> Link </a>
+                            </li>
+                            <li>
+                                <span> Text </span>
+                                <a> Link </a>
+                            </li>
+                            <li>
+                                <span> Text </span>
+                                <a> Link </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copy">
+                    <small>&copy; Senza 2024.</small>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
