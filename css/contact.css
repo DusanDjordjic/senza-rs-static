@@ -1,0 +1,55 @@
+.contact {
+    margin: var(--space-xxl) 0;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: var(--space-md);
+}
+
+.contact .subheader {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+    color: var(--color-gray);
+}
+
+.contact .contact__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 16px;
+}
+
+.contact__info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.contact__info .icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 100rem;
+    color: var(--color-light);
+    background-color: var(--color-primary-500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__info i {
+    font-size: 24px;
+}
+
+.contact__info .text {
+    color: var(--color-gray);
+}
+
+@media only screen and (min-width: 1024px) {
+    .contact .contact__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .contact__info {
+        justify-content: center;
+    }
+}

@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="css/layout.css" />
         <link rel="stylesheet" href="css/hero.css" />
         <link rel="stylesheet" href="css/about.css" />
+        <link rel="stylesheet" href="css/products.css" />
+        <link rel="stylesheet" href="css/contact.css" />
 
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,6 +18,10 @@
             href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,700&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap"
             rel="stylesheet"
         />
+        <script
+            src="https://kit.fontawesome.com/79417f2af1.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
         <!-- HEADER -->
@@ -108,14 +114,147 @@
                 </div>
             </div>
         </section>
-        <section class="best-sellers-section" #proizvodi>
+        <!-- PORDUCTS -->
+        <section class="products" id="proizvodi">
             <div class="container">
-                <h2 class="paragraph-wrapper">
-                    <p>Nasi Proizvodi</p>
-                </h2>
+                <h2>Nasi Proizvodi</h2>
+                <div class="products__grid">
+                    <div class="product">
+                        <img
+                            src="./images/senza_kasnija.webp"
+                            alt="Kesk sa kajsijom"
+                        />
+                        <div class="product__text">
+                            <h4>Keks sa kajsijom i suvim grozdjem</h4>
+                            <p>
+                                Odlican spoj kajsije i suvog grozdja za potpuni
+                                uzitak.
+                            </p>
+                            <h5>Sastojci</h5>
+                            <div class="ingredients">
+                                <span>sastojak</span>
+                                <span>kajsija</span>
+                                <span>secer</span>
+                                <span>grozdje</span>
+                                <span>brasno</span>
+                                <span>so</span>
+                            </div>
+                            <div class="details">
+                                <p class="price">185 RSD</p>
+                                <p>130 g</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img
+                            src="./images/senza_crna_cokolada.webp"
+                            alt="Keks sa crnom cokoladom"
+                        />
+                        <div class="product__text">
+                            <h4>Keks sa crnom cokoladom</h4>
+                            <p>
+                                Kontrast slatkoce i gorcine cini ovaj keks
+                                odlican izbor za sve.
+                            </p>
+                            <h5>Sastojci</h5>
+                            <div class="ingredients">
+                                <span>sastojak</span>
+                                <span>zelatin</span>
+                                <span>secer</span>
+                                <span>crna cokolada</span>
+                                <span>brasno</span>
+                                <span>so</span>
+                            </div>
+                            <div class="details">
+                                <p class="price">175 RSD</p>
+                                <p>145 g</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="./images/senza_kasnija.webp" alt="" />
+                        <div class="product__text">
+                            <h4>Keks sa kajsijom i suvim grozdjem</h4>
+                            <p>
+                                Odlican spoj kajsije i suvog grozdja za potpuni
+                                uzitak.
+                            </p>
+                            <h5>Sastojci</h5>
+                            <div class="ingredients">
+                                <span>sastojak</span>
+                                <span>kajsija</span>
+                                <span>secer</span>
+                                <span>grozdje</span>
+                                <span>brasno</span>
+                                <span>so</span>
+                            </div>
+                            <div class="details">
+                                <p class="price">185 RSD</p>
+                                <p>130 g</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="./images/senza_kasnija.webp" alt="" />
+                        <div class="product__text">
+                            <h4>Keks sa kajsijom i suvim grozdjem</h4>
+                            <p>
+                                Odlican spoj kajsije i suvog grozdja za potpuni
+                                uzitak.
+                            </p>
+                            <h5>Sastojci</h5>
+                            <div class="ingredients">
+                                <span>sastojak</span>
+                                <span>kajsija</span>
+                                <span>secer</span>
+                                <span>grozdje</span>
+                                <span>brasno</span>
+                                <span>so</span>
+                            </div>
+                            <div class="details">
+                                <p class="price">185 RSD</p>
+                                <p>130 g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-
+        <!-- CONTACT -->
+        <section class="contact" id="kontakt">
+            <div class="container">
+                <h2>Kontaktirajte Nas</h2>
+                <p class="subheader">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br />
+                    Velit ut aperiam dignissimos voluptatum explicabo nulla.
+                </p>
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <span class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <p class="text">
+                            +381 64 1315 524<br />+381 64 624 5585
+                        </p>
+                    </div>
+                    <div class="contact__info">
+                        <span class="icon">
+                            <i class="fa-solid fa-location-pin"></i>
+                        </span>
+                        <p class="text">
+                            Ticanova 76 <br />
+                            Sremska Mitrovica, Srbija
+                        </p>
+                    </div>
+                    <div class="contact__info">
+                        <span class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <p class="text">@senzaglutenfree@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- FOOTER -->
         <footer *ngIf="footerContent$ | async as footerContent">
             <div class="container">
