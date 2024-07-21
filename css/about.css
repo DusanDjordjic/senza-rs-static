@@ -3,10 +3,6 @@
     margin: var(--space-xxl) 0;
 }
 
-.about h2 {
-    margin-top: var(--space-xxl);
-}
-
 .about .about__grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -24,7 +20,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    row-gap: var(--space-xl);
+    row-gap: var(--space-lg);
 }
 
 .about .about__grid .about__text p {

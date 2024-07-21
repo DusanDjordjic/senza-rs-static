@@ -20,7 +20,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    row-gap: var(--space-xl);
+    row-gap: var(--space-lg);
 }
 
 .hero .hero__text h1 {
@@ -34,8 +34,17 @@
 }
 
 .hero .hero__text p {
-    line-height: 180%;
-    font-size: var(--font-lmd);
+    line-height: 140%;
+    font-size: var(--font-md);
+}
+
+.hero .hero__text p strong {
+    font-weight: 700;
+}
+
+.hero .hero__text p a {
+    color: var(--color-primary-500);
+    text-decoration: underline;
 }
 
 @media only screen and (min-width: 768px) {
