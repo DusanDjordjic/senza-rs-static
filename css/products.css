@@ -52,7 +52,8 @@
 .products .products__grid .product .product__text .details {
     font-size: 14px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; 
+    /* justify-content: space-between; */
     align-items: center;
 }
 
